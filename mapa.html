@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mapa Interativo</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do Servidor</title>
     <style>
-        #map { height: 500px; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            font-size: 3em;
+            color: #0078D7;
+        }
+        p {
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
-    <div id="map"></div>
-    <script>
-        var map = L.map('map').setView([51.505, -0.09], 13);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19
-        }).addTo(map);
-        L.marker([51.505, -0.09]).addTo(map)
-            .bindPopup('Aqui está o marcador interativo.')
-            .openPopup();
-    </script>
+    <h1>Hello, World!</h1>
+    <p>O servidor está funcionando corretamente.</p>
 </body>
 </html>
